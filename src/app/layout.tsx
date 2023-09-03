@@ -1,11 +1,9 @@
-"use client";
 
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProviders } from "@/components/provider/ThemeProviders";
 import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/footer/Footer";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const inter = Inter({ subsets: ["latin"] });
