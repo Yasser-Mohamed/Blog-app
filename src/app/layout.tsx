@@ -1,11 +1,10 @@
 "use client";
 import "./globals.css";
-import { Inter } from "next/font/google";
 import { ThemeProviders } from "@/components/provider/ThemeProviders";
 import Navbar from "@/components/navbar/Navbar";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import React from 'react'
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Yascoblog",
@@ -22,7 +21,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <ThemeProviders>
           <QueryClientProvider client={queryClient}>
             <div className="flex flex-col gap-4">
